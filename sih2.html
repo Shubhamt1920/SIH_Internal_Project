@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Utopian-io | How to create a Spreadsheet component using HTML and JavaScript</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/handsontable/0.35.1/handsontable.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="sih2.css">
+  </head>
+<body>
+  <nav class="navbar">
+    <div class="container"> </div>
+    </nav>
+    <main role="main" class="container">
+      <h1>Database</h1>
+      <div class="welcome">      
+           <div id="employee">
+           </div>
+      </div>    
+    </main> 
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handsontable/0.35.1/handsontable.min.js"></script>  
+    <script type="text/javascript">
+          var data = [{
+          "A": "",
+          "B": "",
+          "C": "",
+          "D": "",
+          "E": "",
+          "F": "",
+          "G": ""
+        }, {
+          "A": "",
+          "B": "",
+          "C": "",
+          "D": "",
+          "E": ""
+        }
+        , {
+          "A": "",
+          "B": "",
+          "C": "",
+          "D": "",
+          "E": ""
+        }]
+        var container = document.getElementById('employee');
+        var hot = new Handsontable(container, {
+          data: data,
+          rowHeaders: true,
+          colHeaders: true,
+          colHeaders: ['A','B','C','D','E','F','G'],
+          columnSorting: true,
+          sortIndicator: true
+        });        
+    </script>  
+</body>
+</html>
